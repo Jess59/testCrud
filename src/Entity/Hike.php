@@ -44,6 +44,9 @@ class Hike
     #[ORM\Column(length: 30, nullable: true)]
     private ?string $downHike = null;
 
+    #[ORM\Column(length: 10, nullable: true)]
+    private ?string $difficultyHike = null;
+
     public function __construct()
     {
         $this->reservations = new ArrayCollection();
@@ -176,6 +179,18 @@ class Hike
     public function setDownHike(?string $downHike): static
     {
         $this->downHike = $downHike;
+
+        return $this;
+    }
+
+    public function getDifficultyHike(): ?string
+    {
+        return $this->difficultyHike;
+    }
+
+    public function setDifficultyHike(?string $difficultyHike): static
+    {
+        $this->difficultyHike = $difficultyHike;
 
         return $this;
     }
