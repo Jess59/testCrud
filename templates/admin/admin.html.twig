@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hike index{% endblock %}
+
+{% block body %}
+    <h1>Hike index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>IdHike</th>
+                <th>NameHike</th>
+                <th>DescHike</th>
+                <th>CityHike</th>
+                <th>TimeHike</th>
+                <th>DistHike</th>
+                <th>HeightHike</th>
+                <th>DownHike</th>
+                <th>DifficultyHike</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for hike in hikes %}
+            <tr>
+                <td>{{ hike.id }}</td>
+                <td>{{ hike.idHike }}</td>
+                <td>{{ hike.nameHike }}</td>
+                <td>{{ hike.descHike }}</td>
+                <td>{{ hike.cityHike }}</td>
+                <td>{{ hike.timeHike }}</td>
+                <td>{{ hike.distHike }}</td>
+                <td>{{ hike.heightHike }}</td>
+                <td>{{ hike.downHike }}</td>
+                <td>{{ hike.difficultyHike }}</td>
+                <td>
+                    <a href="{{ path('app_admin_show', {'id': hike.id}) }}">show</a>
+                    <a href="{{ path('app_admin_edit', {'id': hike.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_new') }}">Create new</a>
+{% endblock %}
