@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hike{% endblock %}
+
+{% block body %}
+    <h1>Hike</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ hike.id }}</td>
+            </tr>
+            <tr>
+                <th>IdHike</th>
+                <td>{{ hike.idHike }}</td>
+            </tr>
+            <tr>
+                <th>NameHike</th>
+                <td>{{ hike.nameHike }}</td>
+            </tr>
+            <tr>
+                <th>DescHike</th>
+                <td>{{ hike.descHike }}</td>
+            </tr>
+            <tr>
+                <th>CityHike</th>
+                <td>{{ hike.cityHike }}</td>
+            </tr>
+            <tr>
+                <th>TimeHike</th>
+                <td>{{ hike.timeHike }}</td>
+            </tr>
+            <tr>
+                <th>DistHike</th>
+                <td>{{ hike.distHike }}</td>
+            </tr>
+            <tr>
+                <th>HeightHike</th>
+                <td>{{ hike.heightHike }}</td>
+            </tr>
+            <tr>
+                <th>DownHike</th>
+                <td>{{ hike.downHike }}</td>
+            </tr>
+            <tr>
+                <th>DifficultyHike</th>
+                <td>{{ hike.difficultyHike }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_index') }}">back to list</a>
+
+    <a href="{{ path('app_admin_edit', {'id': hike.id}) }}">edit</a>
+
+    {{ include('admin/_delete_form.html.twig') }}
+{% endblock %}
