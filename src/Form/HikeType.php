@@ -12,7 +12,7 @@ class HikeType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('idHike')
+          
             ->add('nameHike')
             ->add('descHike')
             ->add('cityHike')
