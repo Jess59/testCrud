@@ -3,9 +3,31 @@
 {% block title %}New Hike{% endblock %}
 
 {% block body %}
-    <h1>Create new Hike</h1>
+<main id="mainNewHike">
+    <div id="containerNewHike">
+        <div id="newHike">
+            <h1 class="h1Titre">Ajouter une nouvelle randonnée</h1>
 
-    {{ include('admin/_form.html.twig') }}
+            {{ form_start(form) }}
+                <div id="formNewR">
+                    {{ form_errors(form) }}
 
-    <a href="{{ path('app_admin_index') }}">back to list</a>
+                    {{ form_row(form.nameHike, {'attr': {'id': 'nomNewRando'} }) }}
+                    {{ form_row(form.descHike, { 'attr': {'id': 'descNewRando'} }) }}
+                    {{ form_row(form.cityHike, { 'attr': {'id': 'villeNewRando'} }) }}
+                    {{ form_row(form.timeHike, {'attr': {'id': 'dureeNewRando'} }) }}
+                    {{ form_row(form.distHike, {'attr': {'id': 'distanceNewRando'} }) }}
+                    {{ form_row(form.heightHike, {'attr': {'id': 'denivelePositifNewRando'} }) }}
+                    {{ form_row(form.downHike, {'attr': {'id': 'deniveleNegatifNewRando'} }) }}
+                    {{ form_row(form.difficultyHike, {'attr': {'id': 'difficulteNewRando'} }) }}
+
+                    <button type="submit" class="btn" id="btnsEnregNew" size="40">Enregistrer</button>
+                </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+    <figure id="imgInscription">
+        <img src="{{ asset('img/photoConnexion2.png')}}" alt="Image connexion un prés vert">
+    </figure>
+</main>
 {% endblock %}
