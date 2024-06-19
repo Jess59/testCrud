@@ -1,22 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hike index{% endblock %}
 
 {% block body %}
-    <h1>Hike index</h1>
+    
+<main id="admin">
+<h1 class="h1Titre" >NOS RANDONNEES</h1>
+<div class="tableau">
 
     <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
-                <th>NameHike</th>
-                <th>DescHike</th>
-                <th>CityHike</th>
-                <th>TimeHike</th>
-                <th>DistHike</th>
+                <th>NomRandonnée</th>
+                <th>DescriptionRandonée</th>
+                <th>Ville</th>
+                <th>Durée</th>
+                <th>Distance</th>
                 <th>HeightHike</th>
                 <th>DownHike</th>
-                <th>DifficultyHike</th>
+                <th>Niveau</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -33,8 +35,8 @@
                 <td>{{ hike.downHike }}</td>
                 <td>{{ hike.difficultyHike }}</td>
                 <td>
-                    <a href="{{ path('app_admin_show', {'id': hike.id}) }}">show</a>
-                    <a href="{{ path('app_admin_edit', {'id': hike.id}) }}">edit</a>
+                    <a href="{{ path('app_admin_show', {'id': hike.id}) }}">Montrer</a>
+                    <a href="{{ path('app_admin_edit', {'id': hike.id}) }}">Modifier</a>
                 </td>
             </tr>
         {% else %}
@@ -45,5 +47,8 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_admin_new') }}">Create new</a>
+</div> 
+<a id="creation" href="{{ path('app_admin_new') }}">Nouvelle randonnée</a>  
+</main>
+    
 {% endblock %}

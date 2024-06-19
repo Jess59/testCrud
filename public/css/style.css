@@ -261,7 +261,7 @@ h4 {
     font-size: 40px;
     font-family: yesevaOne;
 }
-    C
+    
 #mainIndex .secondLineTitle{
     color: #4b570d;
     font-size: 60px;
@@ -1686,6 +1686,57 @@ width: 50%;
     line-height: 1.52; /* Utilisez un nombre pour le multiple de la taille de police */
     /* Ou utilisez une valeur fixe comme line-height: 24px; */
 }
+
+
+/******ADMIN******/
+
+#admin .h1Titre{
+text-align: center;
+    color: #4B570D;
+    margin-top: 50px;
+ margin-bottom: 50px;
+    font-size: 60px;
+    font-family: yesevaOne;  
+}
+
+
+#admin .tableau {
+    overflow-x: auto; 
+    margin: 0 auto; 
+}
+
+#admin table{
+width: 100% ;
+height: auto; /* Hauteur automatique, s'adapte au contenu */
+margin: 20px auto; /* Marge de 20px en haut et en bas, centrée horizontalement */
+padding: 10px; /* Espacement intérieur de 10px */
+border: 1px solid #000; /* Bordure de 1px, pleine, noire */
+border-collapse: collapse; /* Fusionne les bordures des cellules */
+}
+
+#admin th, td {
+    border: 1px solid #000; /* Bordure de 1px, pleine, noire pour les cellules */
+    padding: 8px; /* Espacement intérieur de 8px */
+    text-align: left; /* Alignement du texte à gauche */
+    word-wrap: break-word;
+}
+#creation {
+    display: block;
+    margin: 20px auto; /* Centré horizontalement */
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

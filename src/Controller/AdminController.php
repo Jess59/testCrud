@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Entity\Hike;
-use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use App\Form\HikeType;
 use App\Repository\HikeRepository;
 use Doctrine\ORM\EntityManagerInterface;
