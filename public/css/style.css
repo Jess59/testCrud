@@ -1729,16 +1729,58 @@ border-collapse: collapse; /* Fusionne les bordures des cellules */
 
 
 /******************NeWHike Admin*****************************/
-#mainNewHike {
+
+#containerNewHike {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+   
+}
+#newHike{
+    width: 50%;
+}
+.form-field {
+    margin-bottom: 20px; /* Ajoute de l'espace entre les champs */
+    padding: 10px; /* Ajoute du padding interne aux champs */
+    border: 1px solid #ccc; /* Bordure pour les champs */
+    border-radius: 5px; /* Bordure arrondie */
+    width: 100%; /* Assure que les champs prennent toute la largeur du conteneur */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
 
 }
 
+#btnsEnregNew {
+    margin-top: 20px; /* Ajoute de l'espace au-dessus du bouton */
+    padding: 10px 20px;
+    background-color:  #DC5527; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de pointeur */
+    justify-content: center;
+    align-items: center;
+    width: fit-content; /* Ajuste la largeur du bouton à son contenu */
+    margin-bottom: 50px;
+}
 
+#btnsEnregNew:hover {
+    background-color: #FF5C24; /* Couleur de fond au survol */
+}
 
+#btnNewRando {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainNewHike .h1Titre {
+    text-align: center;
+    color: #4B570D;
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: yesevaOne; 
+    margin-bottom: 50px;
+    }
 
 
 
