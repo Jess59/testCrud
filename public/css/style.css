@@ -1746,6 +1746,7 @@ border-collapse: collapse; /* Fusionne les bordures des cellules */
     border-radius: 5px; /* Bordure arrondie */
     width: 100%; /* Assure que les champs prennent toute la largeur du conteneur */
     box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    color:#683614;
 
 }
 
@@ -1782,11 +1783,90 @@ border-collapse: collapse; /* Fusionne les bordures des cellules */
     margin-bottom: 50px;
     }
 
+/****************************Update and Delete Hike*****************************************/
+#containerEditHike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#editHike {
+    width: 50%;
+}
+
+#formActions {
+    display: flex;
+    justify-content: center; /* Centre le bouton Modifier */
+    align-items: center;
+    margin-top: 20px; /* Ajoute de l'espace au-dessus des actions */
+}
+
+#btnsEnregEdit {
+    margin-right: 50px;
+    padding: 10px 20px;
+    background-color: #DC5527; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de pointeur */
+    justify-content: center;
+    align-items: center;
+    width: fit-content; /* Ajuste la largeur du bouton à son contenu */
+}
+
+#btnsEnregEdit:hover {
+    background-color: #FF5C24; /* Couleur de fond au survol */
+}
+
+#deleteAndReturn {
+    display: flex;
+    justify-content: space-between; /* Distribue l'espace entre les éléments */
+    align-items: center;
+    margin-top: 20px; /* Ajoute de l'espace au-dessus des actions */
+    margin-bottom: 25px;
+}
+
+#btnDelete {
+    padding: 10px 20px;
+    background-color: #DC5527; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de pointeur */
+    justify-content: center;
+    align-items: center;
+    width: fit-content; /* Ajuste la largeur du bouton à son contenu */
+}
+
+#btnDelete:hover {
+    background-color: #FF5C24; /* Couleur de fond au survol */
+}
+
+#retListLink:hover {
+    background-color: #FF5C24; /* Couleur de fond au survol */
+  
+}
+
+#mainEditHike .h1Titre {
+    text-align: center;
+    color: #4B570D;
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: yesevaOne; 
+    margin-bottom: 50px;
+}
+
+#formEditR .form-field {
+    margin-bottom: 20px; /* Ajoute de l'espace entre les champs */
+    padding: 10px; /* Ajoute du padding interne aux champs */
+    border: 1px solid #ccc; /* Bordure pour les champs */
+    border-radius: 5px; /* Bordure arrondie */
+    width: 100%; /* Assure que les champs prennent toute la largeur du conteneur */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    color:#683614
 
 
-
-
-
+}
 
 
 @media screen and (max-width:600px){
