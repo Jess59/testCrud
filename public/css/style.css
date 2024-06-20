@@ -1728,7 +1728,14 @@ border-collapse: collapse; /* Fusionne les bordures des cellules */
 }
 
 
+/******************NeWHike Admin*****************************/
+#mainNewHike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 
+}
 
 
 
