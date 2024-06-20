@@ -11,15 +11,15 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>NomRandonnée</th>
-                <th>DescriptionRandonée</th>
+                <th>Nom de la randonnée</th>
+                <th>Description randonnée</th>
                 <th>Ville</th>
                 <th>Durée</th>
                 <th>Distance</th>
-                <th>HeightHike</th>
-                <th>DownHike</th>
+                <th>Dénivelé haut</th>
+                <th>Dénivelé bas</th>
                 <th>Niveau</th>
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -35,7 +35,7 @@
                 <td>{{ hike.downHike }}</td>
                 <td>{{ hike.difficultyHike }}</td>
                 <td>
-                    <a href="{{ path('app_admin_show', {'id': hike.id}) }}">Montrer</a>
+                    <a  href="{{ path('app_admin_show', {'id': hike.id}) }}">Montrer</a>
                     <a href="{{ path('app_admin_edit', {'id': hike.id}) }}">Modifier</a>
                 </td>
             </tr>
@@ -48,7 +48,9 @@
     </table>
 
 </div> 
-<a id="creation" href="{{ path('app_admin_new') }}">Nouvelle randonnée</a>  
+<div id="creation">
+    <a id="btnCreation" href="{{ path('app_admin_new') }}">Nouvelle randonnée</a>  
+</div> 
 </main>
     
 {% endblock %}
